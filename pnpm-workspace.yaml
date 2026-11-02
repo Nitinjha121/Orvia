@@ -1,0 +1,19 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+
+# Packages allowed to run install/postinstall scripts (pnpm 11 blocks these by
+# default, and FAILS the install rather than warning when one is left
+# undecided). All three are build-toolchain or first-party SDK packages.
+#
+# `allowBuilds` is pnpm 11's name for this. The list was previously written as
+# `onlyBuiltDependencies` — pnpm 10's name — alongside an unfilled
+# `allowBuilds: { esbuild: "set this to true or false" }` scaffold that pnpm
+# itself had written. Neither took effect, so `@google/genai` landed in
+# `ignoredBuilds` in `node_modules/.modules.yaml` and every `pnpm install`
+# exited 1. If that stale entry is still there after editing this file, clear it
+# and reinstall — it overrides what is declared here.
+allowBuilds:
+  esbuild: true
+  "@google/genai": true
+  protobufjs: true

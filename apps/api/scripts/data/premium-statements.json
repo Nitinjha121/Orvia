@@ -1,0 +1,371 @@
+{
+  "alien-dictionary": {
+    "prompt": "There is a new alien language that uses the English alphabet, but the order of the letters is unknown. You are given a list of strings words from the alien language's dictionary. It is claimed that the strings in words are sorted lexicographically by the rules of this new language. If this claim is incorrect, and the given arrangement of strings in words cannot correspond to any order of letters, return \"\". Otherwise, return a string of the unique letters in the new alien language sorted in lexicographically increasing order by the new language's rules. If there are multiple solutions, return any of them. A string a is lexicographically smaller than a string b if either of the following is true: The first letter where they differ is smaller in a than in b. a is a prefix of b and a.length < b.length.",
+    "source": "neetcode",
+    "sourceUrl": "https://neetcode.io/problems/foreign-dictionary",
+    "scrapedTitle": "Alien Dictionary",
+    "scrapedAt": "2026-09-10T10:10:31.089Z",
+    "practice": {
+      "source": "lintcode",
+      "url": "https://www.lintcode.com/problem/alien-dictionary/",
+      "problemId": 892,
+      "title": "Alien Dictionary",
+      "codeSnippets": {
+        "python": "from typing import (\n    List,\n)\n\nclass Solution:\n    \"\"\"\n    @param words: a list of words\n    @return: a string which is correct order\n    \"\"\"\n    def alien_order(self, words: List[str]) -> str:\n        # Write your code here\n",
+        "javascript": "export class Solution {\n  /**\n   * @param words: a list of words\n   * @return: a string which is correct order\n   */\n  alienOrder(words) {\n    // Write your code here\n  }\n}",
+        "typescript": "export class Solution {\n  /**\n   * @param words: a list of words\n   * @return: a string which is correct order\n   */\n  alienOrder(words: string[]): string {\n    // Write your code here\n  }\n}",
+        "java": "public class Solution {\n    /**\n     * @param words: a list of words\n     * @return: a string which is correct order\n     */\n    public String alienOrder(String[] words) {\n        // Write your code here\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    /**\n     * @param words: a list of words\n     * @return: a string which is correct order\n     */\n    string alienOrder(vector<string> &words) {\n        // Write your code here\n    }\n};",
+        "go": "/**\n * @param words: a list of words\n * @return: a string which is correct order\n */\nfunc AlienOrder(words []string) string {\n    // Write your code here\n}",
+        "rust": "pub struct Solution;\n\nimpl Solution {\n    // @param words: a list of words\n    // @return: a string which is correct order\n    pub fn alien_order(words: Vec<String>) -> String {\n        // Write your code here\n    }\n}",
+        "php": "class Solution{\n    /**\n     * @param $words: a list of words\n     * @return: a string which is correct order\n     */\n    function alien_order($words){\n        // Write your code here\n    }\n}"
+      },
+      "scrapedAt": "2026-09-13T08:30:24.149Z"
+    }
+  },
+  "amount-of-new-area-painted-each-day": {
+    "prompt": "There is a long, thin painting that can be represented by an array of numbers. Given a two-dimensional array of integers paint of length n with subscripts starting at 0, where paint[i]=[start i,end i ] means that the region between start i and end i needs to be painted on day i. Painting the same area multiple times will destroy the painting frame, so each area can only be painted once. Returns an integer array worklog of length n, where worklog[i] is the number of new regions to be drawn on day i.",
+    "source": "lintcode",
+    "sourceUrl": "https://www.lintcode.com/problem/amount-of-new-area-painted-each-day/",
+    "scrapedTitle": "Amount of New Area Painted Each Day",
+    "scrapedAt": "2026-09-10T10:10:43.037Z",
+    "practice": {
+      "source": "lintcode",
+      "url": "https://www.lintcode.com/problem/amount-of-new-area-painted-each-day/",
+      "problemId": 3889,
+      "title": "Amount of New Area Painted Each Day",
+      "codeSnippets": {
+        "python": "from typing import (\n    List,\n)\n\nclass Solution:\n    \"\"\"\n    @param paint: Areas plotted on each day\n    @return: New areas painted on each day\n    \"\"\"\n    def amount_painted(self, paint: List[List[int]]) -> List[int]:\n        # write your code here",
+        "javascript": "export class Solution {\n  /**\n   * @param paint: Areas plotted on each day\n   * @return: New areas painted on each day\n   */\n  amountPainted(paint) {\n    // write your code here\n  }\n}",
+        "typescript": "export class Solution {\n  /**\n   * @param paint: Areas plotted on each day\n   * @return: New areas painted on each day\n   */\n  amountPainted(paint: number[][]): number[] {\n    // write your code here\n  }\n}",
+        "java": "public class Solution {\n    /**\n     * @param paint: Areas plotted on each day\n     * @return: New areas painted on each day\n     */\n    public int[] amountPainted(int[][] paint) {\n        // write your code here\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    /**\n     * @param paint: Areas plotted on each day\n     * @return: New areas painted on each day\n     */\n    vector<int> amountPainted(vector<vector<int>> &paint) {\n        // write your code here\n    }\n};",
+        "go": "/**\n * @param paint: Areas plotted on each day\n * @return: New areas painted on each day\n */\nfunc AmountPainted(paint [][]int) []int {\n    // write your code here\n}",
+        "rust": "pub struct Solution;\n\nimpl Solution {\n    // @param paint: Areas plotted on each day\n    // @return: New areas painted on each day\n    pub fn amount_painted(paint: Vec<Vec<i32>>) -> Vec<i32> {\n        // write your code here\n    }\n}",
+        "php": "class Solution{\n    /**\n     * @param $paint: Areas plotted on each day\n     * @return: New areas painted on each day\n     */\n    function amount_painted($paint){\n        // write your code here\n    }\n}"
+      },
+      "scrapedAt": "2026-09-13T08:30:28.336Z"
+    }
+  },
+  "encode-and-decode-strings": {
+    "prompt": "Design an algorithm to encode a list of strings to a string. The encoded string is then sent over the network and is decoded back to the original list of strings.",
+    "source": "neetcode",
+    "sourceUrl": "https://neetcode.io/problems/string-encode-and-decode",
+    "scrapedTitle": "Encode and Decode Strings",
+    "scrapedAt": "2026-09-10T10:10:48.422Z",
+    "practice": {
+      "source": "lintcode",
+      "url": "https://www.lintcode.com/problem/encode-and-decode-strings/",
+      "problemId": 659,
+      "title": "Encode and Decode Strings",
+      "codeSnippets": {
+        "python": "class Solution:\n    \"\"\"\n    @param: strs: a list of strings\n    @return: encodes a list of strings to a single string.\n    \"\"\"\n    def encode(self, strs):\n        # write your code here\n\n    \"\"\"\n    @param: str: A string\n    @return: decodes a single string to a list of strings\n    \"\"\"\n    def decode(self, str):\n        # write your code here",
+        "java": "public class Solution {\n    /*\n     * @param strs: a list of strings\n     * @return: encodes a list of strings to a single string.\n     */\n    public String encode(List<String> strs) {\n        // write your code here\n    }\n\n    /*\n     * @param str: A string\n     * @return: decodes a single string to a list of strings\n     */\n    public List<String> decode(String str) {\n        // write your code here\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    /*\n     * @param strs: a list of strings\n     * @return: encodes a list of strings to a single string.\n     */\n    string encode(vector<string> &strs) {\n        // write your code here\n    }\n\n    /*\n     * @param str: A string\n     * @return: decodes a single string to a list of strings\n     */\n    vector<string> decode(string &str) {\n        // write your code here\n    }\n};"
+      },
+      "scrapedAt": "2026-09-13T08:30:32.461Z"
+    }
+  },
+  "find-leaves-of-binary-tree": {
+    "prompt": "Given a binary tree, collect a tree's nodes as if you were doing this: Collect and remove all leaves, repeat until the tree is empty.",
+    "source": "lintcode",
+    "sourceUrl": "https://www.lintcode.com/problem/find-leaves-of-binary-tree/",
+    "scrapedTitle": "Find Leaves of Binary Tree",
+    "scrapedAt": "2026-09-10T10:10:58.632Z",
+    "practice": {
+      "source": "lintcode",
+      "url": "https://www.lintcode.com/problem/find-leaves-of-binary-tree/",
+      "problemId": 650,
+      "title": "Find Leaves of Binary Tree",
+      "codeSnippets": {
+        "python": "\"\"\"\nDefinition of TreeNode:\nclass TreeNode:\n    def __init__(self, val):\n        self.val = val\n        self.left, self.right = None, None\n\"\"\"\n\n\nclass Solution:\n    \"\"\"\n    @param: root: the root of binary tree\n    @return: collect and remove all leaves\n    \"\"\"\n    def findLeaves(self, root):\n        # write your code here\n",
+        "java": "/**\r\n * Definition of TreeNode:\r\n * public class TreeNode {\r\n *     public int val;\r\n *     public TreeNode left, right;\r\n *     public TreeNode(int val) {\r\n *         this.val = val;\r\n *         this.left = this.right = null;\r\n *     }\r\n * }\r\n */\n\n\npublic class Solution {\n    /*\n     * @param root: the root of binary tree\n     * @return: collect and remove all leaves\n     */\n    public List<List<Integer>> findLeaves(TreeNode root) {\n        // write your code here\n    }\n}",
+        "cpp": "/**\r\n * Definition of TreeNode:\r\n * class TreeNode {\r\n * public:\r\n *     int val;\r\n *     TreeNode *left, *right;\r\n *     TreeNode(int val) {\r\n *         this->val = val;\r\n *         this->left = this->right = NULL;\r\n *     }\r\n * }\r\n */\n\n\nclass Solution {\npublic:\n    /*\n     * @param root: the root of binary tree\n     * @return: collect and remove all leaves\n     */\n    vector<vector<int>> findLeaves(TreeNode * root) {\n        // write your code here\n    }\n};"
+      },
+      "scrapedAt": "2026-09-13T08:30:36.640Z"
+    }
+  },
+  "graph-valid-tree": {
+    "prompt": "Given n nodes labeled from 0 to n - 1 and a list of undirected edges (each edge is a pair of nodes), write a function to check whether these edges make up a valid tree.",
+    "source": "neetcode",
+    "sourceUrl": "https://neetcode.io/problems/valid-tree",
+    "scrapedTitle": "Graph Valid Tree",
+    "scrapedAt": "2026-09-10T10:11:04.049Z",
+    "practice": {
+      "source": "lintcode",
+      "url": "https://www.lintcode.com/problem/graph-valid-tree/",
+      "problemId": 178,
+      "title": "Graph Valid Tree",
+      "codeSnippets": {
+        "python": "from typing import (\n    List,\n)\n\nclass Solution:\n    \"\"\"\n    @param n: An integer\n    @param edges: a list of undirected edges\n    @return: true if it's a valid tree, or false\n    \"\"\"\n    def valid_tree(self, n: int, edges: List[List[int]]) -> bool:\n        # write your code here\n",
+        "javascript": "export class Solution {\n  /**\n   * @param n: An integer\n   * @param edges: a list of undirected edges\n   * @return: true if it's a valid tree, or false\n   */\n  validTree(n, edges) {\n    // write your code here\n  }\n}",
+        "typescript": "export class Solution {\n  /**\n   * @param n: An integer\n   * @param edges: a list of undirected edges\n   * @return: true if it's a valid tree, or false\n   */\n  validTree(n: number, edges: number[][]): boolean {\n    // write your code here\n  }\n}",
+        "java": "public class Solution {\n    /**\n     * @param n: An integer\n     * @param edges: a list of undirected edges\n     * @return: true if it's a valid tree, or false\n     */\n    public boolean validTree(int n, int[][] edges) {\n        // write your code here\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    /**\n     * @param n: An integer\n     * @param edges: a list of undirected edges\n     * @return: true if it's a valid tree, or false\n     */\n    bool validTree(int n, vector<vector<int>> &edges) {\n        // write your code here\n    }\n};",
+        "go": "/**\n * @param n: An integer\n * @param edges: a list of undirected edges\n * @return: true if it's a valid tree, or false\n */\nfunc ValidTree(n int, edges [][]int) bool {\n    // write your code here\n}",
+        "rust": "pub struct Solution;\n\nimpl Solution {\n    // @param n: An integer\n    // @param edges: a list of undirected edges\n    // @return: true if it's a valid tree, or false\n    pub fn valid_tree(n: i32, edges: Vec<Vec<i32>>) -> bool {\n        // write your code here\n    }\n}",
+        "php": "class Solution{\n    /**\n     * @param $n: An integer\n     * @param $edges: a list of undirected edges\n     * @return: true if it's a valid tree, or false\n     */\n    function valid_tree($n, $edges){\n        // write your code here\n    }\n}"
+      },
+      "scrapedAt": "2026-09-13T08:30:40.704Z"
+    }
+  },
+  "logger-rate-limiter": {
+    "prompt": "Design a logger system that receive stream of messages along with its timestamps. A message should be printed if and only if it has not been printed in the last 10 seconds. In the method couldPrintMessage(), given a message and a timestamp in seconds, return true if the message can be printed within the given timestamp, otherwise return false.",
+    "source": "lintcode",
+    "sourceUrl": "https://www.lintcode.com/problem/logger-rate-limiter/",
+    "scrapedTitle": "Logger Rate Limiter",
+    "scrapedAt": "2026-09-10T10:13:30.213Z",
+    "practice": {
+      "source": "lintcode",
+      "url": "https://www.lintcode.com/problem/logger-rate-limiter/",
+      "problemId": 3620,
+      "title": "Logger Rate Limiter",
+      "codeSnippets": {
+        "python": "class Logger:\n    \"\"\"\n    @param timestamp: Timestamp\n    @param message: Message\n    @return: Whether the log can be printed\n    \"\"\"\n    def could_print_message(self, timestamp: int, message: str) -> bool:\n        # --- write your code here ---",
+        "java": "public class Logger {\n    /**\n     * @param timestamp: Timestamp\n     * @param message: Message\n     * @return: Whether the log can be printed\n     */\n    public boolean couldPrintMessage(int timestamp, String message) {\n        // --- write your code here ---\n    }\n}",
+        "cpp": "class Logger {\npublic:\n    /**\n     * @param timestamp: Timestamp\n     * @param message: Message\n     * @return: Whether the log can be printed\n     */\n    bool couldPrintMessage(int timestamp, string &message) {\n        // --- write your code here ---\n    }\n};"
+      },
+      "scrapedAt": "2026-09-13T08:30:44.790Z"
+    }
+  },
+  "longest-line-of-consecutive-one-in-matrix": {
+    "prompt": "Given a 01 matrix, find the longest line of consecutive 1 in the matrix. The line could be horizontal, vertical, diagonal or anti-diagonal.",
+    "source": "lintcode",
+    "sourceUrl": "https://www.lintcode.com/problem/longest-line-of-consecutive-one-in-matrix/",
+    "scrapedTitle": "Longest Line of Consecutive One in Matrix",
+    "scrapedAt": "2026-09-10T10:11:24.659Z",
+    "practice": {
+      "source": "lintcode",
+      "url": "https://www.lintcode.com/problem/longest-line-of-consecutive-one-in-matrix/",
+      "problemId": 875,
+      "title": "Longest Line of Consecutive One in Matrix",
+      "codeSnippets": {
+        "python": "from typing import (\n    List,\n)\n\nclass Solution:\n    \"\"\"\n    @param m: the 01 matrix\n    @return: the longest line of consecutive one in the matrix\n    \"\"\"\n    def longest_line(self, m: List[List[int]]) -> int:\n        # Write your code here\n",
+        "javascript": "export class Solution {\n  /**\n   * @param m: the 01 matrix\n   * @return: the longest line of consecutive one in the matrix\n   */\n  longestLine(m) {\n    // Write your code here\n  }\n}",
+        "typescript": "export class Solution {\n  /**\n   * @param m: the 01 matrix\n   * @return: the longest line of consecutive one in the matrix\n   */\n  longestLine(m: number[][]): number {\n    // Write your code here\n  }\n}",
+        "java": "public class Solution {\n    /**\n     * @param m: the 01 matrix\n     * @return: the longest line of consecutive one in the matrix\n     */\n    public int longestLine(int[][] m) {\n        // Write your code here\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    /**\n     * @param m: the 01 matrix\n     * @return: the longest line of consecutive one in the matrix\n     */\n    int longestLine(vector<vector<int>> &m) {\n        // Write your code here\n    }\n};",
+        "go": "/**\n * @param m: the 01 matrix\n * @return: the longest line of consecutive one in the matrix\n */\nfunc LongestLine(m [][]int) int {\n    // Write your code here\n}",
+        "rust": "pub struct Solution;\n\nimpl Solution {\n    // @param m: the 01 matrix\n    // @return: the longest line of consecutive one in the matrix\n    pub fn longest_line(m: Vec<Vec<i32>>) -> i32 {\n        // Write your code here\n    }\n}",
+        "php": "class Solution{\n    /**\n     * @param $m: the 01 matrix\n     * @return: the longest line of consecutive one in the matrix\n     */\n    function longest_line($m){\n        // Write your code here\n    }\n}"
+      },
+      "scrapedAt": "2026-09-13T08:30:48.802Z"
+    }
+  },
+  "meeting-rooms": {
+    "prompt": "Given an array of meeting time interval objects consisting of start and end times [[start_1,end_1],[start_2,end_2],...] (start_i < end_i), determine if a person could add all meetings to their schedule without any conflicts. The intervals may be provided in any order. Note: (0,8),(8,10) is not considered a conflict at 8",
+    "source": "neetcode",
+    "sourceUrl": "https://neetcode.io/problems/meeting-schedule",
+    "scrapedTitle": "Meeting Rooms",
+    "scrapedAt": "2026-09-10T10:11:30.042Z",
+    "practice": {
+      "source": "lintcode",
+      "url": "https://www.lintcode.com/problem/meeting-rooms/",
+      "problemId": 920,
+      "title": "Meeting Rooms",
+      "codeSnippets": {
+        "python": "from typing import (\n    List,\n)\nfrom lintcode import (\n    Interval,\n)\n\n\"\"\"\nDefinition of Interval:\nclass Interval(object):\n    def __init__(self, start, end):\n        self.start = start\n        self.end = end\n\"\"\"\n\nclass Solution:\n    \"\"\"\n    @param intervals: an array of meeting time intervals\n    @return: if a person could attend all meetings\n    \"\"\"\n    def can_attend_meetings(self, intervals: List[Interval]) -> bool:\n        # Write your code here",
+        "javascript": "import {\n  Interval,\n} from '/opt/node/lib/lintcode/index.js';\n\n/**\n * Definition of Interval:\n * class Interval {\n *   constructor(start, end) {\n *     this.start = start;\n *     this.end = end;\n *   }\n * }\n */\n\nexport class Solution {\n  /**\n   * @param intervals: an array of meeting time intervals\n   * @return: if a person could attend all meetings\n   */\n  canAttendMeetings(intervals) {\n    // Write your code here\n  }\n}",
+        "typescript": "import {\n    Interval,\n} from '../home/lib/index';\n/**\n * Definition of Interval:\n * export class Interval {\n *     start :number;\n *     end :number;\n *     constructor(start :number, end :number) {\n *         this.start = start;\n *         this.end = end;\n *     }\n * }\n */\n\nexport class Solution {\n  /**\n   * @param intervals: an array of meeting time intervals\n   * @return: if a person could attend all meetings\n   */\n  canAttendMeetings(intervals: Interval[]): boolean {\n    // Write your code here\n  }\n}",
+        "java": "/**\n * Definition of Interval:\n * public class Interval {\n *     int start, end;\n *     Interval(int start, int end) {\n *         this.start = start;\n *         this.end = end;\n *     }\n * }\n */\n\npublic class Solution {\n    /**\n     * @param intervals: an array of meeting time intervals\n     * @return: if a person could attend all meetings\n     */\n    public boolean canAttendMeetings(List<Interval> intervals) {\n        // Write your code here\n    }\n}",
+        "cpp": "/**\n * Definition of Interval:\n * class Interval {\n * public:\n *     int start, end;\n *     Interval(int start, int end) {\n *         this->start = start;\n *         this->end = end;\n *     }\n * }\n */\n\nclass Solution {\npublic:\n    /**\n     * @param intervals: an array of meeting time intervals\n     * @return: if a person could attend all meetings\n     */\n    bool canAttendMeetings(vector<Interval> &intervals) {\n        // Write your code here\n    }\n};",
+        "go": "/**\n * Definition of Interval:\n * type Interval struct {\n *     Start, End int\n * }\n */\n\n/**\n * @param intervals: an array of meeting time intervals\n * @return: if a person could attend all meetings\n */\nfunc CanAttendMeetings(intervals []*Interval) bool {\n    // Write your code here\n}",
+        "rust": "pub struct Solution;\n\nuse lintcode::{\n    Interval,\n};\n// Definition of Interval:\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct Interval {\n//     pub start: i32,\n//     pub end: i32\n// }\n//\n// impl Interval {\n//     #[inline]\n//     pub fn new(start: i32, end: i32) -> Self {\n//         Interval {start: start, end: end}\n//     }\n// }\n\nimpl Solution {\n    // @param intervals: an array of meeting time intervals\n    // @return: if a person could attend all meetings\n    pub fn can_attend_meetings(intervals: Vec<Interval>) -> bool {\n        // Write your code here\n    }\n}",
+        "php": "require_once \"lintcode/Interval.php\";\n\n/**\n * Definition of Interval:\n * class Interval {\n *     var $start, $end;\n *     function __construct($start, $end){\n *         $this -> end = $end;\n *         $this -> start = $start;\n *     }\n * }\n */\n\nclass Solution{\n    /**\n     * @param $intervals: an array of meeting time intervals\n     * @return: if a person could attend all meetings\n     */\n    function can_attend_meetings($intervals){\n        // Write your code here\n    }\n}"
+      },
+      "scrapedAt": "2026-09-13T08:30:52.830Z"
+    }
+  },
+  "meeting-rooms-ii": {
+    "prompt": "Given an array of meeting time interval objects consisting of start and end times [[start_1,end_1],[start_2,end_2],...] (start_i < end_i), find the minimum number of rooms required to schedule all meetings without any conflicts. Note: (0,8),(8,10) is NOT considered a conflict at 8.",
+    "source": "neetcode",
+    "sourceUrl": "https://neetcode.io/problems/meeting-schedule-ii",
+    "scrapedTitle": "Meeting Rooms II",
+    "scrapedAt": "2026-09-10T10:11:35.219Z",
+    "practice": {
+      "source": "lintcode",
+      "url": "https://www.lintcode.com/problem/meeting-rooms-ii/",
+      "problemId": 919,
+      "title": "Meeting Rooms II",
+      "codeSnippets": {
+        "python": "from typing import (\n    List,\n)\nfrom lintcode import (\n    Interval,\n)\n\n\"\"\"\nDefinition of Interval:\nclass Interval(object):\n    def __init__(self, start, end):\n        self.start = start\n        self.end = end\n\"\"\"\n\nclass Solution:\n    \"\"\"\n    @param intervals: an array of meeting time intervals\n    @return: the minimum number of conference rooms required\n    \"\"\"\n    def min_meeting_rooms(self, intervals: List[Interval]) -> int:\n        # Write your code here\n",
+        "javascript": "import {\n  Interval,\n} from '/opt/node/lib/lintcode/index.js';\n\n/**\n * Definition of Interval:\n * class Interval {\n *   constructor(start, end) {\n *     this.start = start;\n *     this.end = end;\n *   }\n * }\n */\n\nexport class Solution {\n  /**\n   * @param intervals: an array of meeting time intervals\n   * @return: the minimum number of conference rooms required\n   */\n  minMeetingRooms(intervals) {\n    // Write your code here\n  }\n}",
+        "typescript": "import {\n    Interval,\n} from '../home/lib/index';\n/**\n * Definition of Interval:\n * export class Interval {\n *     start :number;\n *     end :number;\n *     constructor(start :number, end :number) {\n *         this.start = start;\n *         this.end = end;\n *     }\n * }\n */\n\nexport class Solution {\n  /**\n   * @param intervals: an array of meeting time intervals\n   * @return: the minimum number of conference rooms required\n   */\n  minMeetingRooms(intervals: Interval[]): number {\n    // Write your code here\n  }\n}",
+        "java": "/**\n * Definition of Interval:\n * public class Interval {\n *     int start, end;\n *     Interval(int start, int end) {\n *         this.start = start;\n *         this.end = end;\n *     }\n * }\n */\n\npublic class Solution {\n    /**\n     * @param intervals: an array of meeting time intervals\n     * @return: the minimum number of conference rooms required\n     */\n    public int minMeetingRooms(List<Interval> intervals) {\n        // Write your code here\n    }\n}",
+        "cpp": "/**\n * Definition of Interval:\n * class Interval {\n * public:\n *     int start, end;\n *     Interval(int start, int end) {\n *         this->start = start;\n *         this->end = end;\n *     }\n * }\n */\n\nclass Solution {\npublic:\n    /**\n     * @param intervals: an array of meeting time intervals\n     * @return: the minimum number of conference rooms required\n     */\n    int minMeetingRooms(vector<Interval> &intervals) {\n        // Write your code here\n    }\n};",
+        "go": "/**\n * Definition of Interval:\n * type Interval struct {\n *     Start, End int\n * }\n */\n\n/**\n * @param intervals: an array of meeting time intervals\n * @return: the minimum number of conference rooms required\n */\nfunc MinMeetingRooms(intervals []*Interval) int {\n    // Write your code here\n}",
+        "rust": "pub struct Solution;\n\nuse lintcode::{\n    Interval,\n};\n// Definition of Interval:\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct Interval {\n//     pub start: i32,\n//     pub end: i32\n// }\n//\n// impl Interval {\n//     #[inline]\n//     pub fn new(start: i32, end: i32) -> Self {\n//         Interval {start: start, end: end}\n//     }\n// }\n\nimpl Solution {\n    // @param intervals: an array of meeting time intervals\n    // @return: the minimum number of conference rooms required\n    pub fn min_meeting_rooms(intervals: Vec<Interval>) -> i32 {\n        // Write your code here\n    }\n}",
+        "php": "require_once \"lintcode/Interval.php\";\n\n/**\n * Definition of Interval:\n * class Interval {\n *     var $start, $end;\n *     function __construct($start, $end){\n *         $this -> end = $end;\n *         $this -> start = $start;\n *     }\n * }\n */\n\nclass Solution{\n    /**\n     * @param $intervals: an array of meeting time intervals\n     * @return: the minimum number of conference rooms required\n     */\n    function min_meeting_rooms($intervals){\n        // Write your code here\n    }\n}"
+      },
+      "scrapedAt": "2026-09-13T08:30:56.839Z"
+    }
+  },
+  "number-of-connected-components-in-an-undirected-graph": {
+    "prompt": "You have an undirected graph of n nodes labeled from 0 to n - 1. You are given an integer n and an array edges where edges[i] = [aᵢ, bᵢ] indicates that there is an edge between aᵢ and bᵢ in the graph. Return the number of connected components in the graph.",
+    "source": "neetcode",
+    "sourceUrl": "https://neetcode.io/problems/count-connected-components",
+    "scrapedTitle": "Number of Connected Components in an Undirected Graph",
+    "scrapedAt": "2026-09-10T10:11:40.582Z",
+    "practice": {
+      "source": "lintcode",
+      "url": "https://www.lintcode.com/problem/number-of-connected-components-in-an-undirected-graph/",
+      "problemId": 3651,
+      "title": "Number of Connected Components in an Undirected Graph",
+      "codeSnippets": {
+        "python": "from typing import (\n    List,\n)\n\nclass Solution:\n    \"\"\"\n    @param n: the number of vertices\n    @param edges: the edges of undirected graph\n    @return: the number of connected components\n    \"\"\"\n    def count_components(self, n: int, edges: List[List[int]]) -> int:\n        # write your code here",
+        "javascript": "export class Solution {\n  /**\n   * @param n: the number of vertices\n   * @param edges: the edges of undirected graph\n   * @return: the number of connected components\n   */\n  countComponents(n, edges) {\n    // write your code here\n  }\n}",
+        "typescript": "export class Solution {\n  /**\n   * @param n: the number of vertices\n   * @param edges: the edges of undirected graph\n   * @return: the number of connected components\n   */\n  countComponents(n: number, edges: number[][]): number {\n    // write your code here\n  }\n}",
+        "java": "public class Solution {\n    /**\n     * @param n: the number of vertices\n     * @param edges: the edges of undirected graph\n     * @return: the number of connected components\n     */\n    public int countComponents(int n, int[][] edges) {\n        // write your code here\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    /**\n     * @param n: the number of vertices\n     * @param edges: the edges of undirected graph\n     * @return: the number of connected components\n     */\n    int countComponents(int n, vector<vector<int>> &edges) {\n        // write your code here\n    }\n};",
+        "go": "/**\n * @param n: the number of vertices\n * @param edges: the edges of undirected graph\n * @return: the number of connected components\n */\nfunc CountComponents(n int, edges [][]int) int {\n    // write your code here\n}",
+        "rust": "pub struct Solution;\n\nimpl Solution {\n    // @param n: the number of vertices\n    // @param edges: the edges of undirected graph\n    // @return: the number of connected components\n    pub fn count_components(n: i32, edges: Vec<Vec<i32>>) -> i32 {\n        // write your code here\n    }\n}",
+        "php": "class Solution{\n    /**\n     * @param $n: the number of vertices\n     * @param $edges: the edges of undirected graph\n     * @return: the number of connected components\n     */\n    function count_components($n, $edges){\n        // write your code here\n    }\n}"
+      },
+      "scrapedAt": "2026-09-13T08:31:01.001Z"
+    }
+  },
+  "remove-all-ones-with-row-and-column-flips": {
+    "prompt": "Given a binary matrix grid of size m×n. For each operation, you can choose any row or any column and flip the values of the elements (0 becomes 1, 1 becomes 0). Returns true if all 1 in the matrix can be removed after any operations, false otherwise.",
+    "source": "lintcode",
+    "sourceUrl": "https://www.lintcode.com/problem/remove-all-ones-with-row-and-column-flips/",
+    "scrapedTitle": "Remove All Ones With Row and Column Flips",
+    "scrapedAt": "2026-09-10T10:11:50.981Z",
+    "practice": {
+      "source": "lintcode",
+      "url": "https://www.lintcode.com/problem/remove-all-ones-with-row-and-column-flips/",
+      "problemId": 3795,
+      "title": "Remove All Ones With Row and Column Flips",
+      "codeSnippets": {
+        "python": "from typing import (\n    List,\n)\n\nclass Solution:\n    \"\"\"\n    @param grid: A two-dimensional matrix\n    @return: Is it possible to remove all 1's from the grid\n    \"\"\"\n    def remove_ones(self, grid: List[List[int]]) -> bool:\n        # write your code here",
+        "javascript": "export class Solution {\n  /**\n   * @param grid: A two-dimensional matrix\n   * @return: Is it possible to remove all 1's from the grid\n   */\n  removeOnes(grid) {\n    // write your code here\n  }\n}",
+        "typescript": "export class Solution {\n  /**\n   * @param grid: A two-dimensional matrix\n   * @return: Is it possible to remove all 1's from the grid\n   */\n  removeOnes(grid: number[][]): boolean {\n    // write your code here\n  }\n}",
+        "java": "public class Solution {\n    /**\n     * @param grid: A two-dimensional matrix\n     * @return: Is it possible to remove all 1's from the grid\n     */\n    public boolean removeOnes(int[][] grid) {\n        // write your code here\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    /**\n     * @param grid: A two-dimensional matrix\n     * @return: Is it possible to remove all 1's from the grid\n     */\n    bool removeOnes(vector<vector<int>> &grid) {\n        // write your code here\n    }\n};",
+        "go": "/**\n * @param grid: A two-dimensional matrix\n * @return: Is it possible to remove all 1's from the grid\n */\nfunc RemoveOnes(grid [][]int) bool {\n    // write your code here\n}",
+        "rust": "pub struct Solution;\n\nimpl Solution {\n    // @param grid: A two-dimensional matrix\n    // @return: Is it possible to remove all 1's from the grid\n    pub fn remove_ones(grid: Vec<Vec<i32>>) -> bool {\n        // write your code here\n    }\n}",
+        "php": "class Solution{\n    /**\n     * @param $grid: A two-dimensional matrix\n     * @return: Is it possible to remove all 1's from the grid\n     */\n    function remove_ones($grid){\n        // write your code here\n    }\n}"
+      },
+      "scrapedAt": "2026-09-13T08:31:05.019Z"
+    }
+  },
+  "sentence-screen-fitting": {
+    "prompt": "Given a rows x cols screen and a sentence represented by a list of non-empty words, find how many times the given sentence can be fitted on the screen.",
+    "source": "lintcode",
+    "sourceUrl": "https://www.lintcode.com/problem/sentence-screen-fitting/",
+    "scrapedTitle": "Sentence Screen Fitting",
+    "scrapedAt": "2026-09-10T10:12:10.823Z",
+    "practice": {
+      "source": "lintcode",
+      "url": "https://www.lintcode.com/problem/sentence-screen-fitting/",
+      "problemId": 889,
+      "title": "Sentence Screen Fitting",
+      "codeSnippets": {
+        "python": "from typing import (\n    List,\n)\n\nclass Solution:\n    \"\"\"\n    @param sentence: a list of string\n    @param rows: an integer\n    @param cols: an integer\n    @return: return an integer, denote times the given sentence can be fitted on the screen\n    \"\"\"\n    def words_typing(self, sentence: List[str], rows: int, cols: int) -> int:\n        # Write your code here\n",
+        "javascript": "export class Solution {\n  /**\n   * @param sentence: a list of string\n   * @param rows: an integer\n   * @param cols: an integer\n   * @return: return an integer, denote times the given sentence can be fitted on the screen\n   */\n  wordsTyping(sentence, rows, cols) {\n    // Write your code here\n  }\n}",
+        "typescript": "export class Solution {\n  /**\n   * @param sentence: a list of string\n   * @param rows: an integer\n   * @param cols: an integer\n   * @return: return an integer, denote times the given sentence can be fitted on the screen\n   */\n  wordsTyping(sentence: string[], rows: number, cols: number): number {\n    // Write your code here\n  }\n}",
+        "java": "public class Solution {\n    /**\n     * @param sentence: a list of string\n     * @param rows: an integer\n     * @param cols: an integer\n     * @return: return an integer, denote times the given sentence can be fitted on the screen\n     */\n    public int wordsTyping(String[] sentence, int rows, int cols) {\n        // Write your code here\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    /**\n     * @param sentence: a list of string\n     * @param rows: an integer\n     * @param cols: an integer\n     * @return: return an integer, denote times the given sentence can be fitted on the screen\n     */\n    int wordsTyping(vector<string> &sentence, int rows, int cols) {\n        // Write your code here\n    }\n};",
+        "go": "/**\n * @param sentence: a list of string\n * @param rows: an integer\n * @param cols: an integer\n * @return: return an integer, denote times the given sentence can be fitted on the screen\n */\nfunc WordsTyping(sentence []string, rows int, cols int) int {\n    // Write your code here\n}",
+        "rust": "pub struct Solution;\n\nimpl Solution {\n    // @param sentence: a list of string\n    // @param rows: an integer\n    // @param cols: an integer\n    // @return: return an integer, denote times the given sentence can be fitted on the screen\n    pub fn words_typing(sentence: Vec<String>, rows: i32, cols: i32) -> i32 {\n        // Write your code here\n    }\n}",
+        "php": "class Solution{\n    /**\n     * @param $sentence: a list of string\n     * @param $rows: an integer\n     * @param $cols: an integer\n     * @return: return an integer, denote times the given sentence can be fitted on the screen\n     */\n    function words_typing($sentence, $rows, $cols){\n        // Write your code here\n    }\n}"
+      },
+      "scrapedAt": "2026-09-13T08:31:09.358Z"
+    }
+  },
+  "shortest-way-to-form-string": {
+    "prompt": "For any non-empty string, a subsequence of the string can be constructed by selectively deleting some of its characters, e.g., abcde can be obtained by deleting the characters a and c to obtain the subsequence bde, but aebc cannot be constructed by deleting the characters. Now given a string s and a target string target, if the target string target can be formed from s by constructing a subsequence in s and splicing it in series, return the minimum number of subsequences that form the target string target, or -1 if the target string cannot be spliced.",
+    "source": "lintcode",
+    "sourceUrl": "https://www.lintcode.com/problem/shortest-way-to-form-string/",
+    "scrapedTitle": "Shortest Way to Form String",
+    "scrapedAt": "2026-09-10T10:12:22.336Z",
+    "practice": {
+      "source": "lintcode",
+      "url": "https://www.lintcode.com/problem/shortest-way-to-form-string/",
+      "problemId": 3652,
+      "title": "Shortest Way to Form String",
+      "codeSnippets": {
+        "python": "class Solution:\n    \"\"\"\n    @param s: Source string\n    @param target: Target string\n    @return: Number of subsequences that can be spliced into target\n    \"\"\"\n    def shortest_way(self, s: str, target: str) -> int:\n        # write your code here",
+        "javascript": "export class Solution {\n  /**\n   * @param s: Source string\n   * @param target: Target string\n   * @return: Number of subsequences that can be spliced into target\n   */\n  shortestWay(s, target) {\n    // write your code here\n  }\n}",
+        "typescript": "export class Solution {\n  /**\n   * @param s: Source string\n   * @param target: Target string\n   * @return: Number of subsequences that can be spliced into target\n   */\n  shortestWay(s: string, target: string): number {\n    // write your code here\n  }\n}",
+        "java": "public class Solution {\n    /**\n     * @param s: Source string\n     * @param target: Target string\n     * @return: Number of subsequences that can be spliced into target\n     */\n    public int shortestWay(String s, String target) {\n        // write your code here\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    /**\n     * @param s: Source string\n     * @param target: Target string\n     * @return: Number of subsequences that can be spliced into target\n     */\n    int shortestWay(string &s, string &target) {\n        // write your code here\n    }\n};",
+        "go": "/**\n * @param s: Source string\n * @param target: Target string\n * @return: Number of subsequences that can be spliced into target\n */\nfunc ShortestWay(s string, target string) int {\n    // write your code here\n}",
+        "rust": "pub struct Solution;\n\nimpl Solution {\n    // @param s: Source string\n    // @param target: Target string\n    // @return: Number of subsequences that can be spliced into target\n    pub fn shortest_way(s: String, target: String) -> i32 {\n        // write your code here\n    }\n}",
+        "php": "class Solution{\n    /**\n     * @param $s: Source string\n     * @param $target: Target string\n     * @return: Number of subsequences that can be spliced into target\n     */\n    function shortest_way($s, $target){\n        // write your code here\n    }\n}"
+      },
+      "scrapedAt": "2026-09-13T08:31:13.818Z"
+    }
+  },
+  "strings-differ-by-one-character": {
+    "prompt": "Given a list of strings words, for each string in words, the length is the same. Returns true when there are two strings in words such that they differ by only one character at the same index, otherwise returns false.",
+    "source": "lintcode",
+    "sourceUrl": "https://www.lintcode.com/problem/strings-differ-by-one-character/",
+    "scrapedTitle": "Strings Differ by One Character",
+    "scrapedAt": "2026-09-10T10:12:32.139Z",
+    "practice": {
+      "source": "lintcode",
+      "url": "https://www.lintcode.com/problem/strings-differ-by-one-character/",
+      "problemId": 3688,
+      "title": "Strings Differ by One Character",
+      "codeSnippets": {
+        "python": "from typing import (\n    List,\n)\n\nclass Solution:\n    \"\"\"\n    @param words: An array of words\n    @return: Is there only one character that is not the same\n    \"\"\"\n    def differ_by_one(self, words: List[str]) -> bool:\n        # write your code here",
+        "javascript": "export class Solution {\n  /**\n   * @param words: An array of words\n   * @return: Is there only one character that is not the same\n   */\n  differByOne(words) {\n    // write your code here\n  }\n}",
+        "typescript": "export class Solution {\n  /**\n   * @param words: An array of words\n   * @return: Is there only one character that is not the same\n   */\n  differByOne(words: string[]): boolean {\n    // write your code here\n  }\n}",
+        "java": "public class Solution {\n    /**\n     * @param words: An array of words\n     * @return: Is there only one character that is not the same\n     */\n    public boolean differByOne(List<String> words) {\n        // write your code here\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    /**\n     * @param words: An array of words\n     * @return: Is there only one character that is not the same\n     */\n    bool differByOne(vector<string> &words) {\n        // write your code here\n    }\n};",
+        "go": "/**\n * @param words: An array of words\n * @return: Is there only one character that is not the same\n */\nfunc DifferByOne(words []string) bool {\n    // write your code here\n}",
+        "rust": "pub struct Solution;\n\nimpl Solution {\n    // @param words: An array of words\n    // @return: Is there only one character that is not the same\n    pub fn differ_by_one(words: Vec<String>) -> bool {\n        // write your code here\n    }\n}",
+        "php": "class Solution{\n    /**\n     * @param $words: An array of words\n     * @return: Is there only one character that is not the same\n     */\n    function differ_by_one($words){\n        // write your code here\n    }\n}"
+      },
+      "scrapedAt": "2026-09-13T08:31:17.769Z"
+    }
+  },
+  "the-earliest-moment-when-everyone-become-friends": {
+    "prompt": "In a social circle, there are n people, numbered from 0 to n - 1. Now there is a list of logs, where logs[i] = [time, x, y] indicates that x and y became friends with each other at time. Friendship is mutual and transferable. That is: Mutual: when a and b are friends, then b has a among his friends Transferable: when a and b are friends, and b has c as a friend, then a and c will also be friends and know each other Return the earliest time when everyone in this circle knew each other. If the earliest time is not found, -1 is returned.",
+    "source": "lintcode",
+    "sourceUrl": "https://www.lintcode.com/problem/the-earliest-moment-when-everyone-become-friends/",
+    "scrapedTitle": "The Earliest Moment When Everyone Become Friends",
+    "scrapedAt": "2026-09-10T10:12:41.933Z",
+    "practice": {
+      "source": "lintcode",
+      "url": "https://www.lintcode.com/problem/the-earliest-moment-when-everyone-become-friends/",
+      "problemId": 3670,
+      "title": "The Earliest Moment When Everyone Become Friends",
+      "codeSnippets": {
+        "python": "from typing import (\n    List,\n)\n\nclass Solution:\n    \"\"\"\n    @param logs: Logging with time, x, y\n    @param n: Total count of people\n    @return: Timestamp of when everyone became friends\n    \"\"\"\n    def earliest_acq(self, logs: List[List[int]], n: int) -> int:\n        # write your code here",
+        "javascript": "export class Solution {\n  /**\n   * @param logs: Logging with time, x, y\n   * @param n: Total count of people\n   * @return: Timestamp of when everyone became friends\n   */\n  earliestAcq(logs, n) {\n    // write your code here\n  }\n}",
+        "typescript": "export class Solution {\n  /**\n   * @param logs: Logging with time, x, y\n   * @param n: Total count of people\n   * @return: Timestamp of when everyone became friends\n   */\n  earliestAcq(logs: number[][], n: number): number {\n    // write your code here\n  }\n}",
+        "java": "public class Solution {\n    /**\n     * @param logs: Logging with time, x, y\n     * @param n: Total count of people\n     * @return: Timestamp of when everyone became friends\n     */\n    public int earliestAcq(int[][] logs, int n) {\n        // write your code here\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    /**\n     * @param logs: Logging with time, x, y\n     * @param n: Total count of people\n     * @return: Timestamp of when everyone became friends\n     */\n    int earliestAcq(vector<vector<int>> &logs, int n) {\n        // write your code here\n    }\n};",
+        "go": "/**\n * @param logs: Logging with time, x, y\n * @param n: Total count of people\n * @return: Timestamp of when everyone became friends\n */\nfunc EarliestAcq(logs [][]int, n int) int {\n    // write your code here\n}",
+        "rust": "pub struct Solution;\n\nimpl Solution {\n    // @param logs: Logging with time, x, y\n    // @param n: Total count of people\n    // @return: Timestamp of when everyone became friends\n    pub fn earliest_acq(logs: Vec<Vec<i32>>, n: i32) -> i32 {\n        // write your code here\n    }\n}",
+        "php": "class Solution{\n    /**\n     * @param $logs: Logging with time, x, y\n     * @param $n: Total count of people\n     * @return: Timestamp of when everyone became friends\n     */\n    function earliest_acq($logs, $n){\n        // write your code here\n    }\n}"
+      },
+      "scrapedAt": "2026-09-13T08:31:22.014Z"
+    }
+  },
+  "walls-and-gates": {
+    "prompt": "You are given a m x n 2D grid initialized with these three possible values. -1 - A wall or an obstacle. 0 - A gate. INF - Infinity means an empty room. We use the value 2^31 - 1 = 2147483647 to represent INF as you may assume that the distance to a gate is less than 2147483647. Fill each empty room with the distance to its nearest gate. If it is impossible to reach a Gate, that room should remain filled with INF",
+    "source": "lintcode",
+    "sourceUrl": "https://www.lintcode.com/problem/walls-and-gates/",
+    "scrapedTitle": "Walls and Gates",
+    "scrapedAt": "2026-09-10T10:12:54.661Z",
+    "practice": {
+      "source": "lintcode",
+      "url": "https://www.lintcode.com/problem/walls-and-gates/",
+      "problemId": 663,
+      "title": "Walls and Gates",
+      "codeSnippets": {
+        "python": "from typing import (\n    List,\n)\n\nclass Solution:\n    \"\"\"\n    @param rooms: m x n 2D grid\n    @return: nothing\n    \"\"\"\n    def walls_and_gates(self, rooms: List[List[int]]):\n        # write your code here\n",
+        "javascript": "export class Solution {\n  /**\n   * @param rooms: m x n 2D grid\n   * @return: nothing\n   */\n  wallsAndGates(rooms) {\n    // write your code here\n  }\n}",
+        "typescript": "export class Solution {\n  /**\n   * @param rooms: m x n 2D grid\n   * @return: nothing\n   */\n  wallsAndGates(rooms: number[][]){\n    // write your code here\n  }\n}",
+        "java": "public class Solution {\n    /**\n     * @param rooms: m x n 2D grid\n     * @return: nothing\n     */\n    public void wallsAndGates(int[][] rooms) {\n        // write your code here\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    /**\n     * @param rooms: m x n 2D grid\n     * @return: nothing\n     */\n    void wallsAndGates(vector<vector<int>> &rooms) {\n        // write your code here\n    }\n};",
+        "go": "/**\n * @param rooms: m x n 2D grid\n * @return: nothing\n */\nfunc WallsAndGates(rooms [][]int)  {\n    // write your code here\n}",
+        "rust": "pub struct Solution;\n\nimpl Solution {\n    // @param rooms: m x n 2D grid\n    // @return: nothing\n    pub fn wallsAndGates(rooms: Vec<Vec<i32>>) {\n        // write your code here\n    }\n}",
+        "php": "class Solution{\n    /**\n     * @param $rooms: m x n 2D grid\n     * @return: nothing\n     */\n    function walls_and_gates(&$rooms){\n        // write your code here\n    }\n}"
+      },
+      "scrapedAt": "2026-09-13T08:31:25.987Z"
+    }
+  }
+}

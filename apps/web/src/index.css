@@ -1,0 +1,3 @@
+/* The ONLY stylesheet entry point. Everything visual resolves through the
+   generated token layer in @orvia/theme — no colours are defined here. */
+@import "@orvia/theme/theme.css";

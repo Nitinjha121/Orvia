@@ -1,0 +1,44 @@
+# ── dependencies & build output ──────────────────────────────────────────────
+node_modules/
+dist/
+.turbo/
+*.tsbuildinfo
+
+# Generated from packages/theme/src/tokens.ts by `pnpm theme:build`.
+packages/theme/theme.css
+
+# ── secrets ──────────────────────────────────────────────────────────────────
+# Matches at any depth, so apps/api/.env is covered. The example file, which
+# holds only empty keys, is deliberately kept.
+.env
+.env.*
+!.env.example
+
+# ── personal data ────────────────────────────────────────────────────────────
+# Interview recordings. Someone's voice answering questions about their career
+# is the most sensitive thing this app produces — it must never reach a remote,
+# public or private.
+apps/api/data/
+data/audio/
+
+# Regenerable: rebuilt by `pnpm --filter @orvia/api ingest`.
+apps/api/scripts/data/cache/
+
+# NOTE: apps/api/scripts/data/question-bank.seed.json IS committed on purpose —
+# it is what makes `pnpm seed` work offline on a fresh clone.
+
+# ── local noise ──────────────────────────────────────────────────────────────
+.DS_Store
+*.log
+.playwright-mcp/
+
+# Scratch left at the repo root while working on a round: a coaching note, a
+# Playwright accessibility snapshot and a screenshot. Anchored with a leading
+# slash so a real `report.yml` somewhere in the tree is not swallowed by this.
+/lesson.md
+/report.yml
+/setup.png
+
+# Test-run artefacts and database snapshots — never committed.
+data-test/
+backups/

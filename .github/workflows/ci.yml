@@ -1,0 +1,83 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# A second push to the same branch makes the first run pointless.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      # `--frozen-lockfile` is the point of running this in CI at all: it fails
+      # when the lockfile and the manifests disagree, which is the one install
+      # problem you cannot see locally.
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      # Must come first: the packages emit the .d.ts the apps typecheck against.
+      - name: Build
+        id: build
+        run: pnpm build
+
+      - name: Typecheck
+        if: steps.build.outcome == 'success'
+        run: pnpm typecheck
+
+      - name: Lint
+        if: (success() || failure()) && steps.build.outcome == 'success'
+        run: pnpm lint
+
+      # ── the offline suites ──────────────────────────────────────────────────
+      # No database, no API key, no live stack: each passes with an empty
+      # environment (`env -i PATH="$PATH" HOME="$HOME"`). Everything else in
+      # `pnpm test:*` opens a real Gemini Live session or needs `orvia_test`.
+      # Every step after Build runs even when an earlier one went red, so one
+      # failure cannot hide another; a failed build or a cancel still stops.
+      - name: Rotation, banks and starter code
+        if: (success() || failure()) && steps.build.outcome == 'success'
+        run: pnpm test:practice
+
+      # The `say`-synthesised checks skip themselves here: macOS only.
+      - name: Speech metrics and quote location
+        if: (success() || failure()) && steps.build.outcome == 'success'
+        run: pnpm --filter @orvia/api verify:metrics
+
+      - name: Interview guards
+        if: (success() || failure()) && steps.build.outcome == 'success'
+        run: pnpm --filter @orvia/api verify:guards
+
+      - name: Multi-question round tracking
+        if: (success() || failure()) && steps.build.outcome == 'success'
+        run: pnpm --filter @orvia/api verify:questions
+
+      - name: Learning feed bank and ordering
+        if: (success() || failure()) && steps.build.outcome == 'success'
+        run: pnpm --filter @orvia/api verify:feed
+
+      - name: Say-it-better rewrites
+        if: (success() || failure()) && steps.build.outcome == 'success'
+        run: pnpm --filter @orvia/api verify:rephrase
+
+      # About two minutes, spent waiting out the timeouts it exists to prove.
+      - name: Verbatim transcription always terminates
+        if: (success() || failure()) && steps.build.outcome == 'success'
+        run: pnpm --filter @orvia/api verify:transcription
